@@ -2,21 +2,25 @@
   width: 100%;
   padding: 50px 60px;
   box-sizing: border-box;
+  
   > div {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
     gap: 70px;
   }
+
    .text {
       display: flex;
       flex-direction: column;
       justify-content: center;
     }
+
     > div> div> ul >li::marker{
         color:#008000a3;
         font-size: 18px;
     }
+
      h3 {
         margin: 0 0 25px;
         font-size: 48px;
@@ -24,6 +28,7 @@
         font-weight: 700;
         color: #000;
       }
+
       a {
         display: inline-flex;
         align-items: center;
@@ -34,6 +39,7 @@
           cursor:pointer;
         }
       }
+
       a:first-child{
         padding: 7px 20px;
         color: #fff;
@@ -45,6 +51,7 @@
             box-shadow: 1px 4px 10px #000;
         }
       }
+
       a:last-child {
         color: #0869b8;
         background: transparent;
