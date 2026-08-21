@@ -10,57 +10,57 @@
     gap: 70px;
   }
 
-   .text {
-      display: flex;
-      flex-direction: column;
+  .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  > div> div> ul >li::marker{
+      color:#008000a3;
+      font-size: 18px;
+  }
+
+    h3 {
+      margin: 0 0 25px;
+      font-size: 48px;
+      line-height: 1.1;
+      font-weight: 700;
+      color: #000;
+    }
+
+    a {
+      display: inline-flex;
+      align-items: center;
       justify-content: center;
+      text-decoration: none;
+      font-size: 15px;
+      &:hover{
+        cursor:pointer;
+      }
     }
 
-    > div> div> ul >li::marker{
-        color:#008000a3;
-        font-size: 18px;
+    a:first-child{
+      padding: 7px 20px;
+      color: #fff;
+      background: linear-gradient(90deg,#0568b8 0%, #194fb8 60%,#6730b8 100%);
+      border-radius: 6px;
+      box-sizing: border-box;
+      transition: box-shadow 1.2s ease;
+      &:hover{
+          box-shadow: 1px 4px 10px #000;
+      }
     }
 
-     h3 {
-        margin: 0 0 25px;
-        font-size: 48px;
-        line-height: 1.1;
-        font-weight: 700;
-        color: #000;
+    a:last-child {
+      color: #0869b8;
+      background: transparent;
+      font-weight: 600;
+      margin-left: 9%;
+      &:hover{
+          transform: scale(1.08);
+          font-weight: 700;
       }
-
-      a {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        text-decoration: none;
-        font-size: 15px;
-        &:hover{
-          cursor:pointer;
-        }
-      }
-
-      a:first-child{
-        padding: 7px 20px;
-        color: #fff;
-        background: linear-gradient(90deg,#0568b8 0%, #194fb8 60%,#6730b8 100%);
-        border-radius: 6px;
-        box-sizing: border-box;
-        transition: box-shadow 1.2s ease;
-        &:hover{
-            box-shadow: 1px 4px 10px #000;
-        }
-      }
-
-      a:last-child {
-        color: #0869b8;
-        background: transparent;
-        font-weight: 600;
-        margin-left: 9%;
-        &:hover{
-            transform: scale(1.08);
-            font-weight: 700;
-        }
     }
 
 }
