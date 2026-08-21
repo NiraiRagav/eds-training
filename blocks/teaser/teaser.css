@@ -18,7 +18,7 @@
 }
 
 .teaser > div > div > ul > li::marker {
-  color: rgba(0, 128, 0, 0.639);
+  color: rgb(0 128 0 / 63.9%);
   font-size: 18px;
 }
 
