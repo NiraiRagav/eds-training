@@ -7,7 +7,7 @@
 .custom-card .custom-card1-item {
   border: 1px solid #ddd;
   border-radius: 4px;
-  box-shadow: 0 1px 4px rgb(0, 0, 0 / 15%);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
   padding: 16px;
   text-align: center;
 }
