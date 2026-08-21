@@ -51,15 +51,15 @@
   transition: box-shadow 1.2s ease;
 }
 
-.teaser a:first-child:hover {
-  box-shadow: 1px 4px 10px #000;
-}
-
 .teaser a:last-child {
   color: #0869b8;
   background: transparent;
   font-weight: 600;
   margin-left: 9%;
+}
+
+.teaser a:first-child:hover {
+  box-shadow: 1px 4px 10px #000;
 }
 
 .teaser a:last-child:hover {
