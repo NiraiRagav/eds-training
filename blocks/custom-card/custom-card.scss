@@ -3,8 +3,8 @@
   grid-template-columns: repeat(4, 1fr);
   gap: 16px;
   
-    .custom_card1{
-         &_item {
+    .custom-card1{
+        &-item {
             border: 1px solid #ddd;
             border-radius: 4px;
             box-shadow: 0 1px 4px rgb(0, 0, 0, 15%);
@@ -16,7 +16,7 @@
             }
         }
 
-        &_number {
+        &-number {
             position: relative;
             margin: 0 0 15px;
             font-size: 0;
@@ -31,33 +31,33 @@
             }
         }
 
-        &:nth-child(1) .custom_card1_number::after {
+        &:nth-child(1) .custom-card1-number::after {
             content: '01';
         }
 
-        &:nth-child(2) .custom_card1_number::after {
+        &:nth-child(2) .custom-card1-number::after {
             content: '02';
         }
 
-        &:nth-child(3) .custom_card1_number::after {
+        &:nth-child(3) .custom-card1-number::after {
             content: '03';
         }
 
-        &:nth-child(4) .custom_card1_number::after {
+        &:nth-child(4) .custom-card1-number::after {
             content: '04';
         }
 
-        &_img {
+        &-img {
             width: auto;
             margin: 12px;
         }
 
-        &_title {
+        &-title {
             font-size: 20px;
             font-weight: 800;
         }
 
-        &_content {
+        &-content {
             font-size: 16px;
             line-height: 22px;
             color: #666;

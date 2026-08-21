@@ -5,16 +5,16 @@ export default function decorate(block) {
   //  cards==> [card1,card2,card3,card4, etc]
   cards.forEach((card) => {
     //  ?. ==> optional chaining operator(if condition)
-    card?.classList.add('custom_card1');
+    card?.classList.add(' custom-card1');
     const carditem = card.querySelector('div');
-    carditem?.classList.add('custom_card1_item');
+    carditem?.classList.add(' custom-card1-item');
     const cardimg = card.querySelector('img');
-    cardimg?.classList.add('custom_card1_img');
+    cardimg?.classList.add(' custom-card1-img');
     const cardcontent = card.querySelector('p');
-    cardcontent?.classList.add('custom_card1_content');
+    cardcontent?.classList.add(' custom-card1-content');
     const cardnumber = card.querySelector('h3');
-    cardnumber?.classList.add('custom_card1_number');
+    cardnumber?.classList.add(' custom-card1-number');
     const cardtitle = card.querySelector('h2');
-    cardtitle?.classList.add('custom_card1_title');
+    cardtitle?.classList.add(' custom-card1-title');
   });
 }

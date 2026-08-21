@@ -3,27 +3,23 @@
   grid-template-columns: repeat(4, 1fr);
   gap: 16px;
 }
-
-.custom-card .custom_card1_item {
+.custom-card .custom-card1-item {
   border: 1px solid #ddd;
   border-radius: 4px;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
   padding: 16px;
   text-align: center;
 }
-
-.custom-card .custom_card1_item:hover {
+.custom-card .custom-card1-item:hover {
   cursor: pointer;
   box-shadow: 0 2px 5px #979191;
 }
-
-.custom-card .custom_card1_number {
+.custom-card .custom-card1-number {
   position: relative;
   margin: 0 0 15px;
   font-size: 0;
 }
-
-.custom-card .custom_card1_number::after {
+.custom-card .custom-card1-number::after {
   content: "";
   position: absolute;
   top: -5px;
@@ -32,34 +28,27 @@
   font-weight: 700;
   color: #d7d7d7;
 }
-
-.custom-card .custom_card1:nth-child(1) .custom_card1_number::after {
+.custom-card .custom-card1:nth-child(1) .custom-card1-number::after {
   content: "01";
 }
-
-.custom-card .custom_card1:nth-child(2) .custom_card1_number::after {
+.custom-card .custom-card1:nth-child(2) .custom-card1-number::after {
   content: "02";
 }
-
-.custom-card .custom_card1:nth-child(3) .custom_card1_number::after {
+.custom-card .custom-card1:nth-child(3) .custom-card1-number::after {
   content: "03";
 }
-
-.custom-card .custom_card1:nth-child(4) .custom_card1_number::after {
+.custom-card .custom-card1:nth-child(4) .custom-card1-number::after {
   content: "04";
 }
-
-.custom-card .custom_card1_img {
+.custom-card .custom-card1-img {
   width: auto;
   margin: 12px;
 }
-
-.custom-card .custom_card1_title {
+.custom-card .custom-card1-title {
   font-size: 20px;
   font-weight: 800;
 }
-
-.custom-card .custom_card1_content {
+.custom-card .custom-card1-content {
   font-size: 16px;
   line-height: 22px;
   color: #666;
