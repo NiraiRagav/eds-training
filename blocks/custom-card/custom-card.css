@@ -3,7 +3,6 @@
   grid-template-columns: repeat(4, 1fr);
   gap: 16px;
 }
-
 .custom-card .custom-card1-item {
   border: 1px solid #ddd;
   border-radius: 4px;
@@ -11,18 +10,15 @@
   padding: 16px;
   text-align: center;
 }
-
 .custom-card .custom-card1-item:hover {
   cursor: pointer;
   box-shadow: 0 2px 5px #979191;
 }
-
 .custom-card .custom-card1-number {
   position: relative;
   margin: 0 0 15px;
   font-size: 0;
 }
-
 .custom-card .custom-card1-number::after {
   content: "";
   position: absolute;
@@ -32,33 +28,26 @@
   font-weight: 700;
   color: #d7d7d7;
 }
-
 .custom-card .custom-card1:nth-child(1) .custom-card1-number::after {
   content: "01";
 }
-
 .custom-card .custom-card1:nth-child(2) .custom-card1-number::after {
   content: "02";
 }
-
 .custom-card .custom-card1:nth-child(3) .custom-card1-number::after {
   content: "03";
 }
-
 .custom-card .custom-card1:nth-child(4) .custom-card1-number::after {
   content: "04";
 }
-
 .custom-card .custom-card1-img {
   width: auto;
   margin: 12px;
 }
-
 .custom-card .custom-card1-title {
   font-size: 20px;
   font-weight: 800;
 }
-
 .custom-card .custom-card1-content {
   font-size: 16px;
   line-height: 22px;
