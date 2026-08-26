@@ -1,0 +1,104 @@
+.best-package-container{
+  .best-package-title{
+    margin-top: 10%;
+    color: #c9342e;
+    font-size: 18px;
+    font-weight: 100;
+    line-height: 1;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    &::before{
+      content: "";
+      position: absolute;
+      background-color: #f8d2d4;
+      top: 5px;
+      left: 6px;
+      width: 28px;
+      height: 28px;
+      top: -5px;
+      left: 41.7%;
+      z-index: -1;
+      border-radius: 3px;
+    }
+  }
+  .best-package-pre-title{
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 1.2;
+    margin: 15px 0px 30px 0px;
+    text-align: center;
+    padding: 0% 24%;
+    strong{
+      background: linear-gradient(90deg, #fb9537, #dd1d25);
+      -webkit-background-clip: text;
+      color: transparent;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+}
+.best-package{
+  &-card{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+  &-item{
+    padding: 0px 30px 0px;
+    box-sizing: border-box;
+    border-left:1px dashed #e6432b;
+    border-right:1px dashed #e6432b;
+    &:hover{
+      cursor:pointer;
+      box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+      transition: all 0.7s ease-in-out;
+      .best-package-item-title{
+        text-decoration: underline;
+      }
+    }
+    &-image {
+      margin: 0 0 28px;
+      picture,img {
+        display: block;
+        width: 100%;
+      }
+    }
+    &-author,&-comments {
+      display: inline-block;
+      color: #73767c;
+      font-size: 15px;
+      line-height: 1;
+      position: relative;
+      &::before {
+        display: inline-block;
+        margin-right: 9px;
+        color: #c9342e;
+        font-size: 16px;
+      }
+      .icon img {
+        width: 16px;
+        height: 16px;
+        position: absolute;
+        top: 11px;
+        left: 0;
+        filter: invert(27%) sepia(45%) saturate(1876%) hue-rotate(335deg) brightness(89%) contrast(88%);
+      }
+    }
+    &-author {
+      margin-right: 34px;
+    }
+     &-title {
+      margin: 14px 0;
+      color: #242936;
+      font-size: 23px;
+      font-weight: 700;
+      line-height: 1.45;
+    }
+    &-description {
+      margin: 0;
+      color: #707581;
+      font-size: 16px;
+      line-height: 1.7;
+    }
+  }
+}

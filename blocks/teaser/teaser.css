@@ -1,0 +1,68 @@
+.teaser {
+  width: 100%;
+  padding: 50px 60px;
+  box-sizing: border-box;
+}
+
+.teaser > div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 70px;
+}
+
+.teaser .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.teaser > div > div > ul > li::marker {
+  color: rgb(0 128 0 / 63.9%);
+  font-size: 18px;
+}
+
+.teaser h3 {
+  margin: 0 0 25px;
+  font-size: 48px;
+  line-height: 1.1;
+  font-weight: 700;
+  color: #000;
+}
+
+.teaser a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.teaser a:hover {
+  cursor: pointer;
+}
+
+.teaser a:first-child {
+  padding: 7px 20px;
+  color: #fff;
+  background: linear-gradient(90deg, #0568b8 0%, #194fb8 60%, #6730b8 100%);
+  border-radius: 6px;
+  box-sizing: border-box;
+  transition: box-shadow 1.2s ease;
+}
+
+.teaser a:last-child {
+  color: #0869b8;
+  background: transparent;
+  font-weight: 600;
+  margin-left: 9%;
+}
+
+.teaser a:first-child:hover {
+  box-shadow: 1px 4px 10px #000;
+}
+
+.teaser a:last-child:hover {
+  transform: scale(1.08);
+  font-weight: 700;
+}/*# sourceMappingURL=teaser.css.map */

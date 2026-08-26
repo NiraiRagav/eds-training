@@ -1,0 +1,117 @@
+.best-package-container .best-package-title {
+  margin-top: 10%;
+  color: #c9342e;
+  font-size: 18px;
+  font-weight: 100;
+  line-height: 1;
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.best-package-container .best-package-title::before {
+  content: "";
+  position: absolute;
+  background-color: #f8d2d4;
+  width: 28px;
+  height: 28px;
+  top: -5px;
+  left: 41.7%;
+  z-index: -1;
+  border-radius: 3px;
+}
+
+.best-package-container .best-package-pre-title {
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 1.2;
+  margin: 15px 0 30px;
+  text-align: center;
+  padding: 0% 24%;
+}
+
+.best-package-container .best-package-pre-title strong {
+  background: linear-gradient(90deg, #fb9537, #dd1d25);
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+.best-package-card {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.best-package-item {
+  padding: 0 30px;
+  box-sizing: border-box;
+  border-left: 1px dashed #e6432b;
+  border-right: 1px dashed #e6432b;
+}
+
+.best-package-item:hover {
+  cursor: pointer;
+  box-shadow: 0 0 10px rgb(0 0 0 / 20%);
+  transition: all 0.7s ease-in-out;
+}
+
+.best-package-item-title {
+  margin: 14px 0;
+  color: #242936;
+  font-size: 23px;
+  font-weight: 700;
+  line-height: 1.45;
+}
+
+.best-package-item:hover .best-package-item-title {
+  text-decoration: underline;
+}
+
+.best-package-item-image {
+  margin: 0 0 28px;
+}
+
+.best-package-item-image picture,
+.best-package-item-image img {
+  display: block;
+  width: 100%;
+}
+
+.best-package-item-author,
+.best-package-item-comments {
+  display: inline-block;
+  color: #73767c;
+  font-size: 15px;
+  line-height: 1;
+  position: relative;
+}
+
+.best-package-item-author::before,
+.best-package-item-comments::before {
+  display: inline-block;
+  margin-right: 9px;
+  color: #c9342e;
+  font-size: 16px;
+}
+
+.best-package-item-author .icon img,
+.best-package-item-comments .icon img {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 11px;
+  left: 0;
+  filter: invert(27%) sepia(45%) saturate(1876%) hue-rotate(335deg) brightness(89%) contrast(88%);
+}
+
+.best-package-item-author {
+  margin-right: 34px;
+}
+
+.best-package-item-description {
+  margin: 0;
+  color: #707581;
+  font-size: 16px;
+  line-height: 1.7;
+}/*# sourceMappingURL=best-package.css.map */

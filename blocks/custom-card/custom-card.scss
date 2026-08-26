@@ -1,0 +1,85 @@
+.custom-card {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  
+    .custom-card1{
+        &-item {
+            position:relative;
+            height: 100%;
+            border: 1px solid #ddd;
+            box-sizing: border-box;
+            border-radius: 4px;
+            box-shadow: 0 1px 4px rgb(0 0 0 / 15%);
+            padding: 16px;
+            text-align: center;
+             &::after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 0;
+                height: 2px;
+                background-color: red;
+                transition: width 0.7s ease;
+            }
+            &:hover {
+                cursor: pointer;
+                &::after {
+                    width: 100%;
+                }
+                .custom-card1-number::after {
+                    color: #000;
+                }
+            }
+        }
+
+        &-number {
+            position: relative;
+            margin: 0 0 15px;
+            font-size: 0;
+            &::after {
+                content: '';
+                position: absolute;
+                top: -89px;
+                right: 0;
+                font-size: 32px;
+                font-weight: 700;
+                color: #d7d7d7;
+            }
+        }
+
+        &:nth-child(1) .custom-card1-number::after {
+            content: '01';
+        }
+
+        &:nth-child(2) .custom-card1-number::after {
+            content: '02';
+        }
+
+        &:nth-child(3) .custom-card1-number::after {
+            content: '03';
+        }
+
+        &:nth-child(4) .custom-card1-number::after {
+            content: '04';
+        }
+
+        &-img {
+            width: auto;
+            margin: 12px;
+        }
+
+        &-title {
+            font-size: 20px;
+            font-weight: 800;
+        }
+
+        &-content {
+            font-size: 16px;
+            line-height: 22px;
+            color: #666;
+        }
+
+    }
+}
