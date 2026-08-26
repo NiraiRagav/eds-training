@@ -5,14 +5,32 @@
   
     .custom-card1{
         &-item {
+            position:relative;
+            height: 100%;
             border: 1px solid #ddd;
+            box-sizing: border-box;
             border-radius: 4px;
             box-shadow: 0 1px 4px rgb(0 0 0 / 15%);
             padding: 16px;
             text-align: center;
+             &::after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 0;
+                height: 2px;
+                background-color: red;
+                transition: width 0.7s ease;
+            }
             &:hover {
                 cursor: pointer;
-                box-shadow: 0 2px 5px #979191;
+                &::after {
+                    width: 100%;
+                }
+                .custom-card1-number::after {
+                    color: #000;
+                }
             }
         }
 
@@ -23,7 +41,7 @@
             &::after {
                 content: '';
                 position: absolute;
-                top: -5px;
+                top: -89px;
                 right: 0;
                 font-size: 32px;
                 font-weight: 700;
