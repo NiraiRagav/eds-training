@@ -3,6 +3,7 @@
   grid-template-columns: repeat(4, 1fr);
   gap: 16px;
 }
+
 .custom-card .custom-card1-item {
   position: relative;
   height: 100%;
@@ -13,6 +14,7 @@
   padding: 16px;
   text-align: center;
 }
+
 .custom-card .custom-card1-item::after {
   content: "";
   position: absolute;
@@ -23,20 +25,25 @@
   background-color: red;
   transition: width 0.7s ease;
 }
+
 .custom-card .custom-card1-item:hover {
   cursor: pointer;
 }
+
 .custom-card .custom-card1-item:hover::after {
   width: 100%;
 }
+
 .custom-card .custom-card1-item:hover .custom-card1-number::after {
   color: #000;
 }
+
 .custom-card .custom-card1-number {
   position: relative;
   margin: 0 0 15px;
   font-size: 0;
 }
+
 .custom-card .custom-card1-number::after {
   content: "";
   position: absolute;
@@ -46,26 +53,33 @@
   font-weight: 700;
   color: #d7d7d7;
 }
+
 .custom-card .custom-card1:nth-child(1) .custom-card1-number::after {
   content: "01";
 }
+
 .custom-card .custom-card1:nth-child(2) .custom-card1-number::after {
   content: "02";
 }
+
 .custom-card .custom-card1:nth-child(3) .custom-card1-number::after {
   content: "03";
 }
+
 .custom-card .custom-card1:nth-child(4) .custom-card1-number::after {
   content: "04";
 }
+
 .custom-card .custom-card1-img {
   width: auto;
   margin: 12px;
 }
+
 .custom-card .custom-card1-title {
   font-size: 20px;
   font-weight: 800;
 }
+
 .custom-card .custom-card1-content {
   font-size: 16px;
   line-height: 22px;
