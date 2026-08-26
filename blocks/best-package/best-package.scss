@@ -1,5 +1,5 @@
 .best-package-container{
-  .best-package__title{
+  .best-package-title{
     margin-top: 10%;
     color: #c9342e;
     font-size: 18px;
@@ -22,7 +22,7 @@
       border-radius: 3px;
     }
   }
-  .best-package__pre-title{
+  .best-package-pre-title{
     font-size: 48px;
     font-weight: 400;
     line-height: 1.2;
@@ -52,18 +52,18 @@
       cursor:pointer;
       box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
       transition: all 0.7s ease-in-out;
-      .best-package-item__title{
+      .best-package-item-title{
         text-decoration: underline;
       }
     }
-    &__image {
+    &-image {
       margin: 0 0 28px;
       picture,img {
         display: block;
         width: 100%;
       }
     }
-    &__author,&__comments {
+    &-author,&-comments {
       display: inline-block;
       color: #73767c;
       font-size: 15px;
@@ -84,17 +84,17 @@
         filter: invert(27%) sepia(45%) saturate(1876%) hue-rotate(335deg) brightness(89%) contrast(88%);
       }
     }
-    &__author {
+    &-author {
       margin-right: 34px;
     }
-     &__title {
+     &-title {
       margin: 14px 0;
       color: #242936;
       font-size: 23px;
       font-weight: 700;
       line-height: 1.45;
     }
-    &__description {
+    &-description {
       margin: 0;
       color: #707581;
       font-size: 16px;

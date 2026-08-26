@@ -6,8 +6,8 @@ export default function decorate(block) {
   const preTitle = section?.querySelector(
     '.default-content-wrapper h3',
   );
-  mainTitle?.classList.add('best-package__title');
-  preTitle?.classList.add('best-package__pre-title');
+  mainTitle?.classList.add('best-package-title');
+  preTitle?.classList.add('best-package-pre-title');
   const bestPackage = [...block.children];
   bestPackage.forEach((row) => {
     row?.classList.add('best-package-card');
@@ -16,11 +16,11 @@ export default function decorate(block) {
       item.classList.add('best-package-item');
       const [image, author, comments, description] = item.querySelectorAll('p');
       const title = item.querySelector('h3');
-      image?.classList.add('best-package-item__image');
-      author?.classList.add('best-package-item__author');
-      comments?.classList.add('best-package-item__comments');
-      title?.classList.add('best-package-item__title');
-      description?.classList.add('best-package-item__description');
+      image?.classList.add('best-package-item-image');
+      author?.classList.add('best-package-item-author');
+      comments?.classList.add('best-package-item-comments');
+      title?.classList.add('best-package-item-title');
+      description?.classList.add('best-package-item-description');
     });
   });
 }
